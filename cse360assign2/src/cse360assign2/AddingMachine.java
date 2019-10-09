@@ -38,7 +38,7 @@ public class AddingMachine {
 	 * @param value the value to be subtracted
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	/**
 	 * This will return a string that represents the value of getTotal().
