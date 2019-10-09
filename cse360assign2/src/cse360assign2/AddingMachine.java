@@ -54,4 +54,5 @@ public class AddingMachine {
 	public void clear() {
 		
 	}
+	// made a comment at the bottom of the program
 }
