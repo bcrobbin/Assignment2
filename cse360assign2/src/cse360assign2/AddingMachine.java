@@ -10,8 +10,7 @@ package cse360assign2;
 public class AddingMachine {
 	
 	private int total;
-	private String totalString = "";
-	private boolean isFirst = true;
+	private String totalString = "0";
 	
 	/**
 	 * This constructs an adding machine that 
@@ -34,28 +33,16 @@ public class AddingMachine {
 	 * @param value the value to be added
 	 */
 	public void add (int value) {
-		if (isFirst == true) {
-			isFirst = false;
-			total += value;
-			totalString += value;
-		} else {
 		total += value;
 		totalString += " + " + value;
-		}
 	}
 	/**
 	 * This subtracts a value from the total.
 	 * @param value the value to be subtracted
 	 */
 	public void subtract (int value) {
-		if (isFirst == true) {
-			isFirst = false;
-			total -= value;
-			totalString += value;
-		} else {
 		total -= value;
 		totalString += " - " + value;
-		}
 	}
 	/**
 	 * This will return a string that represents the value of getTotal().
@@ -69,6 +56,7 @@ public class AddingMachine {
 	 * Resets total to 0 and totalString to "".
 	 */
 	public void clear() {
-		
+		totalString = "0";
+		total = 0;
 	}
 }
