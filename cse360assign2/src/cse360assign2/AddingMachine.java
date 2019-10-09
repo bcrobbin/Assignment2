@@ -1,10 +1,11 @@
 package cse360assign2;
-
+/* Benjamin Robbins
+ * CSE 360 85141 Calliss
+ * Assignment: 2
+ */
 /**
  * This class implements a machine that counts 
  * addition and subtraction operations.
- * @author Benjamin Robbins
- *
  */
 
 public class AddingMachine {
@@ -36,6 +37,7 @@ public class AddingMachine {
 		total += value;
 		totalString += " + " + value;
 	}
+	
 	/**
 	 * This subtracts a value from the total.
 	 * @param value the value to be subtracted
@@ -44,6 +46,7 @@ public class AddingMachine {
 		total -= value;
 		totalString += " - " + value;
 	}
+	
 	/**
 	 * This will return a string that represents the value of getTotal().
 	 * @return A string that represents the total
