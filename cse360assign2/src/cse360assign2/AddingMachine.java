@@ -23,7 +23,7 @@ public class AddingMachine {
 	 * @return An integer that represents the total amount of the values added
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/**
